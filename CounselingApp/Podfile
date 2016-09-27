@@ -1,0 +1,7 @@
+target 'CounselingApp' do
+  # Pods for CounselingApp
+
+	pod 'DropdownMenu'
+	pod 'MSDynamicsDrawerViewController'
+
+end
