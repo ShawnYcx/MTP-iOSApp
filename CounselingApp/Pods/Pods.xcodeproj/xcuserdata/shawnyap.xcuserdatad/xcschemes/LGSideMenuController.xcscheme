@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A6C28B8A2F8E7ADC95190854F81EB5E5'
-               BlueprintName = 'MSDynamicsDrawerViewController'
+               BlueprintIdentifier = '71B76793A3B7514D38CE8C93A9B8C8F4'
+               BlueprintName = 'LGSideMenuController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMSDynamicsDrawerViewController.a'>
+               BuildableName = 'libLGSideMenuController.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

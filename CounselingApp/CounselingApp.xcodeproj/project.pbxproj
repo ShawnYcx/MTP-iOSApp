@@ -10,12 +10,14 @@
 		17A5D35E41B8786CE820E4B8 /* libPods-CounselingApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1D2F167BCAED3184C8F056 /* libPods-CounselingApp.a */; };
 		61129FD61D95C18C00598211 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61129FD51D95C18C00598211 /* main.m */; };
 		61129FD91D95C18C00598211 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61129FD81D95C18C00598211 /* AppDelegate.m */; };
-		61129FDC1D95C18C00598211 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61129FDB1D95C18C00598211 /* ViewController.m */; };
 		61129FDF1D95C18C00598211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61129FDD1D95C18C00598211 /* Main.storyboard */; };
 		61129FE21D95C18C00598211 /* CounselingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61129FE01D95C18C00598211 /* CounselingApp.xcdatamodeld */; };
 		61129FE41D95C18C00598211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61129FE31D95C18C00598211 /* Assets.xcassets */; };
 		61129FE71D95C18C00598211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61129FE51D95C18C00598211 /* LaunchScreen.storyboard */; };
-		61A2D3B81D9A4D69009F1549 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A2D3B71D9A4D69009F1549 /* TableViewController.m */; };
+		614F56A21D9DC45300E81973 /* RearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F56A11D9DC45300E81973 /* RearViewController.m */; };
+		614F56A51D9DC46A00E81973 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F56A41D9DC46A00E81973 /* FrontViewController.m */; };
+		614F56A81D9DC47A00E81973 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F56A71D9DC47A00E81973 /* RightViewController.m */; };
+		614F56AC1D9DC4E500E81973 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F56AB1D9DC4E500E81973 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,15 +26,19 @@
 		61129FD51D95C18C00598211 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61129FD71D95C18C00598211 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61129FD81D95C18C00598211 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		61129FDA1D95C18C00598211 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		61129FDB1D95C18C00598211 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		61129FDE1D95C18C00598211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61129FE11D95C18C00598211 /* CounselingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CounselingApp.xcdatamodel; sourceTree = "<group>"; };
 		61129FE31D95C18C00598211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61129FE61D95C18C00598211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61129FE81D95C18C00598211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61A2D3B61D9A4D69009F1549 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		61A2D3B71D9A4D69009F1549 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		614F56A01D9DC45300E81973 /* RearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RearViewController.h; path = Controllers/RearViewController.h; sourceTree = "<group>"; };
+		614F56A11D9DC45300E81973 /* RearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RearViewController.m; path = Controllers/RearViewController.m; sourceTree = "<group>"; };
+		614F56A31D9DC46A00E81973 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrontViewController.h; path = Controllers/FrontViewController.h; sourceTree = "<group>"; };
+		614F56A41D9DC46A00E81973 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrontViewController.m; path = Controllers/FrontViewController.m; sourceTree = "<group>"; };
+		614F56A61D9DC47A00E81973 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightViewController.h; path = Controllers/RightViewController.h; sourceTree = "<group>"; };
+		614F56A71D9DC47A00E81973 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RightViewController.m; path = Controllers/RightViewController.m; sourceTree = "<group>"; };
+		614F56AA1D9DC4E500E81973 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		614F56AB1D9DC4E500E81973 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		6779F529763888E75BBF39C7 /* Pods-CounselingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CounselingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CounselingApp/Pods-CounselingApp.release.xcconfig"; sourceTree = "<group>"; };
 		6D1D2F167BCAED3184C8F056 /* libPods-CounselingApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CounselingApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,16 +86,14 @@
 			children = (
 				61129FD71D95C18C00598211 /* AppDelegate.h */,
 				61129FD81D95C18C00598211 /* AppDelegate.m */,
-				61129FDA1D95C18C00598211 /* ViewController.h */,
-				61129FDB1D95C18C00598211 /* ViewController.m */,
-				61129FDD1D95C18C00598211 /* Main.storyboard */,
 				61129FE31D95C18C00598211 /* Assets.xcassets */,
-				61129FE51D95C18C00598211 /* LaunchScreen.storyboard */,
-				61129FE81D95C18C00598211 /* Info.plist */,
+				614F569F1D9DC41300E81973 /* Controllers */,
 				61129FE01D95C18C00598211 /* CounselingApp.xcdatamodeld */,
+				61129FE81D95C18C00598211 /* Info.plist */,
+				61129FE51D95C18C00598211 /* LaunchScreen.storyboard */,
+				61129FDD1D95C18C00598211 /* Main.storyboard */,
 				61129FD41D95C18C00598211 /* Supporting Files */,
-				61A2D3B61D9A4D69009F1549 /* TableViewController.h */,
-				61A2D3B71D9A4D69009F1549 /* TableViewController.m */,
+				614F56A91D9DC4C800E81973 /* SWRevealViewController */,
 			);
 			path = CounselingApp;
 			sourceTree = "<group>";
@@ -100,6 +104,28 @@
 				61129FD51D95C18C00598211 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		614F569F1D9DC41300E81973 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				614F56A01D9DC45300E81973 /* RearViewController.h */,
+				614F56A11D9DC45300E81973 /* RearViewController.m */,
+				614F56A31D9DC46A00E81973 /* FrontViewController.h */,
+				614F56A41D9DC46A00E81973 /* FrontViewController.m */,
+				614F56A61D9DC47A00E81973 /* RightViewController.h */,
+				614F56A71D9DC47A00E81973 /* RightViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		614F56A91D9DC4C800E81973 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				614F56AA1D9DC4E500E81973 /* SWRevealViewController.h */,
+				614F56AB1D9DC4E500E81973 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		B69B925D44BD6BADEC10A112 /* Pods */ = {
@@ -233,11 +259,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61129FDC1D95C18C00598211 /* ViewController.m in Sources */,
+				614F56A81D9DC47A00E81973 /* RightViewController.m in Sources */,
+				614F56A51D9DC46A00E81973 /* FrontViewController.m in Sources */,
+				614F56AC1D9DC4E500E81973 /* SWRevealViewController.m in Sources */,
 				61129FD91D95C18C00598211 /* AppDelegate.m in Sources */,
 				61129FE21D95C18C00598211 /* CounselingApp.xcdatamodeld in Sources */,
-				61A2D3B81D9A4D69009F1549 /* TableViewController.m in Sources */,
 				61129FD61D95C18C00598211 /* main.m in Sources */,
+				614F56A21D9DC45300E81973 /* RearViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

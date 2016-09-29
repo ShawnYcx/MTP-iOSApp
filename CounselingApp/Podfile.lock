@@ -1,15 +1,15 @@
 PODS:
   - DropdownMenu (1.0.0)
-  - MSDynamicsDrawerViewController (1.5.1)
+  - LGSideMenuController (1.0.10)
 
 DEPENDENCIES:
   - DropdownMenu
-  - MSDynamicsDrawerViewController
+  - LGSideMenuController (~> 1.0.0)
 
 SPEC CHECKSUMS:
   DropdownMenu: 5777e17ac6ddbc69b151719b83a838da81440786
-  MSDynamicsDrawerViewController: 2874df90f5e9453dc7d4e32f8038b50615d4baa7
+  LGSideMenuController: 8682bdbd0008c1acfbce95eaf96cc3657bca5f95
 
-PODFILE CHECKSUM: 1b55478bc8e6b346249d24783f06f3d688ad8f0c
+PODFILE CHECKSUM: 589c95e7c4ff08a681cbc89c3466bea84d8714cf
 
 COCOAPODS: 1.0.1

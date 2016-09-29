@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MSDynamicsDrawerViewController.xcscheme</key>
+		<key>LGSideMenuController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5BC73F5BFA232F2264612B04B9D43B8F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A6C28B8A2F8E7ADC95190854F81EB5E5</key>
+		<key>71B76793A3B7514D38CE8C93A9B8C8F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CDF7EB458C979A28FEA0659765406BEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE05CA8855F57484299E7D3234E8FFE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,85 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		192D8D23AA58B13DE025C2EB37FBC126 /* MSDynamicsDrawerStyler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A335B4173297E5B47FD4DF1E7F4C1A3 /* MSDynamicsDrawerStyler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		219D26F50BB7733DC325C1AD4C97EBBE /* MSDynamicsDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62939FD30AFA02AF6FF81BC6297071 /* MSDynamicsDrawerViewController.m */; };
-		4E9272C0ECABE78F1B7E4DB2FF18DF2F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */; };
-		79BE1721B38F7E7CBEA7B0AB5E2CE601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		7C995EAED480D8B85902A9C9DED501A3 /* MSDynamicsDrawerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A01836FA6C4F87D66A7DAA7235D8BB4 /* MSDynamicsDrawerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84559E91422A6BF8610A6BACB40D94FF /* DropdownMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E40151BDF64F4CEB5D753300F77DB3 /* DropdownMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96B8FE785126143FFE35DF5DD3CE07F3 /* DropdownMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBEDB5C8B407CF6A446150E0EDE8F5F /* DropdownMenuSegue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9943B4ABAAF71BE0AC3D152EFB272B33 /* DropdownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DF4B344BBC0BDA1C6D163725D1ED61 /* DropdownMenu-dummy.m */; };
-		A2E461CA79149557B9AB637878D97FC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		BB1DCC9FD4E9D9688DB80262E852FF60 /* MSDynamicsDrawerStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D090A2ECE94B547B98CD371146A52 /* MSDynamicsDrawerStyler.m */; };
-		C1B695377F06A10EA34162CF9D96B3CB /* Pods-CounselingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF49F034A427F60064C73970F8D7E7 /* Pods-CounselingApp-dummy.m */; };
-		DD379664F30DF5ACB3F841AD9BE9BD79 /* MSDynamicsDrawerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A68E4FC13ABD7F697C070B566DC18267 /* MSDynamicsDrawerViewController-dummy.m */; };
-		E6C3F36A2F1675E977A5E085A04037D0 /* DropdownMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1087821E3CED6823BB68049FDF69A551 /* DropdownMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6FA1DA071E8448B776E7269DADDC3A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */; };
-		FEFD4BE83AF9AA28B40F498C4CEA8D0D /* DropdownMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D1ADF406EF8CC8BDE23D7A7D20B713 /* DropdownMenuController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		42D73C88D15D29F1C0AB6A138A6469F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		560463BFF25A288B22E2ACE7863FF3A5 /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6740BF96CDAC6CFB75D3697A319FAC /* LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DE7D1581B75F02FE1CA4B95982CDCFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		84559E91422A6BF8610A6BACB40D94FF /* DropdownMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B1D343C1B8A866A7203E40F5B47C0B /* DropdownMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96B8FE785126143FFE35DF5DD3CE07F3 /* DropdownMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AA750772193F70E1EF40274F40926A /* DropdownMenuSegue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9943B4ABAAF71BE0AC3D152EFB272B33 /* DropdownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E18DDD2A999F1898F3FD0A8A194258 /* DropdownMenu-dummy.m */; };
+		BC997F172EEC0D059AB137CD2BA88FB4 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCC6BFC61890C2447173A937BC0C438 /* LGSideMenuController.m */; };
+		E6C3F36A2F1675E977A5E085A04037D0 /* DropdownMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5E5EB6BB02EF6C7B081D72682AD768 /* DropdownMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0432601DDE399C40EE8A6309D4F0863 /* Pods-CounselingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF49F034A427F60064C73970F8D7E7 /* Pods-CounselingApp-dummy.m */; };
+		F6FA1DA071E8448B776E7269DADDC3A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F98641680EB850D23A47554D9704DD4F /* LGSideMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C504ECF1B4BA4FB7E3CED624DBA6ECC4 /* LGSideMenuController-dummy.m */; };
+		FEFD4BE83AF9AA28B40F498C4CEA8D0D /* DropdownMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383845CEFCE625524E46682C52A1DEEB /* DropdownMenuController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D52B3293F99673EB1B7C6FAC6D5CC922 /* PBXContainerItemProxy */ = {
+		0084FD19ABD4C1D6676E677B5CEFAAFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CDF7EB458C979A28FEA0659765406BEF;
 			remoteInfo = DropdownMenu;
 		};
-		F9C81D23CFB3EF03E6C6FD1A9DB32198 /* PBXContainerItemProxy */ = {
+		517D4925CA06C7010D5BE17453766600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A6C28B8A2F8E7ADC95190854F81EB5E5;
-			remoteInfo = MSDynamicsDrawerViewController;
+			remoteGlobalIDString = 71B76793A3B7514D38CE8C93A9B8C8F4;
+			remoteInfo = LGSideMenuController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01210C433BAFAD2DCD8C2CCACC28E3D8 /* libDropdownMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDropdownMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1087821E3CED6823BB68049FDF69A551 /* DropdownMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DropdownMenuController.h; path = DropdownMenu/DropdownMenuController.h; sourceTree = "<group>"; };
-		1A01836FA6C4F87D66A7DAA7235D8BB4 /* MSDynamicsDrawerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSDynamicsDrawerViewController.h; path = MSDynamicsDrawerViewController/MSDynamicsDrawerViewController.h; sourceTree = "<group>"; };
-		1F596FFF3D0E0EDF4988D28AD21F632F /* DropdownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropdownMenu-prefix.pch"; sourceTree = "<group>"; };
-		27E40151BDF64F4CEB5D753300F77DB3 /* DropdownMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DropdownMenuSegue.h; path = DropdownMenu/DropdownMenuSegue.h; sourceTree = "<group>"; };
-		2B2D87EBF645EF29B192483A405B93BA /* MSDynamicsDrawerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSDynamicsDrawerViewController-prefix.pch"; sourceTree = "<group>"; };
-		3E3C72AFA34FA4EDAFBB2AC3FAD35723 /* libMSDynamicsDrawerViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMSDynamicsDrawerViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		45CB52DA1F0F880820AE22E65C530A3E /* libPods-CounselingApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CounselingApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		54F115F07C472224F10155650BB27C80 /* DropdownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropdownMenu.xcconfig; sourceTree = "<group>"; };
-		70DF4B344BBC0BDA1C6D163725D1ED61 /* DropdownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropdownMenu-dummy.m"; sourceTree = "<group>"; };
+		1E38E8E6BF515F1CD85C6F6EEC2E938B /* libPods-CounselingApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CounselingApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		360690EFC0169D5CE1EF2058CF2B1767 /* LGSideMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGSideMenuController.xcconfig; sourceTree = "<group>"; };
+		383845CEFCE625524E46682C52A1DEEB /* DropdownMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DropdownMenuController.m; path = DropdownMenu/DropdownMenuController.m; sourceTree = "<group>"; };
+		4D8D25FD6727C100B130B832F4F47CCC /* libLGSideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLGSideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7161C715A077EA1B12DB6DB7DFE7BD9E /* Pods-CounselingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CounselingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		72162605713C5B10105BF062E063F845 /* Pods-CounselingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CounselingApp.release.xcconfig"; sourceTree = "<group>"; };
-		7A335B4173297E5B47FD4DF1E7F4C1A3 /* MSDynamicsDrawerStyler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSDynamicsDrawerStyler.h; path = MSDynamicsDrawerViewController/MSDynamicsDrawerStyler.h; sourceTree = "<group>"; };
 		7AC877A4915FADB17E81F35D53579497 /* Pods-CounselingApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CounselingApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7CB465FD2AA8666EC0424E6F5D60B727 /* DropdownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropdownMenu.xcconfig; sourceTree = "<group>"; };
+		7DF79E5A2BAB930CEF13E21BE8A4F1EA /* LGSideMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-prefix.pch"; sourceTree = "<group>"; };
+		87AA750772193F70E1EF40274F40926A /* DropdownMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DropdownMenuSegue.m; path = DropdownMenu/DropdownMenuSegue.m; sourceTree = "<group>"; };
+		8A5E5EB6BB02EF6C7B081D72682AD768 /* DropdownMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DropdownMenuController.h; path = DropdownMenu/DropdownMenuController.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		971D090A2ECE94B547B98CD371146A52 /* MSDynamicsDrawerStyler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSDynamicsDrawerStyler.m; path = MSDynamicsDrawerViewController/MSDynamicsDrawerStyler.m; sourceTree = "<group>"; };
+		9A40390D502511A4A855F628C19B28AC /* libDropdownMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDropdownMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEF49F034A427F60064C73970F8D7E7 /* Pods-CounselingApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CounselingApp-dummy.m"; sourceTree = "<group>"; };
-		9B62939FD30AFA02AF6FF81BC6297071 /* MSDynamicsDrawerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSDynamicsDrawerViewController.m; path = MSDynamicsDrawerViewController/MSDynamicsDrawerViewController.m; sourceTree = "<group>"; };
-		A68E4FC13ABD7F697C070B566DC18267 /* MSDynamicsDrawerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSDynamicsDrawerViewController-dummy.m"; sourceTree = "<group>"; };
-		B3D1ADF406EF8CC8BDE23D7A7D20B713 /* DropdownMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DropdownMenuController.m; path = DropdownMenu/DropdownMenuController.m; sourceTree = "<group>"; };
+		ABCC6BFC61890C2447173A937BC0C438 /* LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuController.m; path = LGSideMenuController/LGSideMenuController.m; sourceTree = "<group>"; };
+		B0B1D343C1B8A866A7203E40F5B47C0B /* DropdownMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DropdownMenuSegue.h; path = DropdownMenu/DropdownMenuSegue.h; sourceTree = "<group>"; };
 		B7607A6E8AEF1F57056821C6D90C555D /* Pods-CounselingApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CounselingApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		BCBEDB5C8B407CF6A446150E0EDE8F5F /* DropdownMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DropdownMenuSegue.m; path = DropdownMenu/DropdownMenuSegue.m; sourceTree = "<group>"; };
+		C2E18DDD2A999F1898F3FD0A8A194258 /* DropdownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropdownMenu-dummy.m"; sourceTree = "<group>"; };
+		C504ECF1B4BA4FB7E3CED624DBA6ECC4 /* LGSideMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGSideMenuController-dummy.m"; sourceTree = "<group>"; };
+		C6980549303CFEFA1731682C08113FE1 /* DropdownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropdownMenu-prefix.pch"; sourceTree = "<group>"; };
+		CA6740BF96CDAC6CFB75D3697A319FAC /* LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuController.h; path = LGSideMenuController/LGSideMenuController.h; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D958C8E7AE96CEA28D20915BD31DB553 /* Pods-CounselingApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CounselingApp-resources.sh"; sourceTree = "<group>"; };
-		EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		F43BAEFCAD16B2132B597D6627964F35 /* Pods-CounselingApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CounselingApp-frameworks.sh"; sourceTree = "<group>"; };
-		F5665D0B890869201F1CF425195D4A52 /* MSDynamicsDrawerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSDynamicsDrawerViewController.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3036CEA5BFB5E0D72AC5B652301EF7E0 /* Frameworks */ = {
+		B68724DD5E1F8E463134F92BF70C84F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E461CA79149557B9AB637878D97FC7 /* Foundation.framework in Frameworks */,
-				4E9272C0ECABE78F1B7E4DB2FF18DF2F /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68CB3438658A9B574D99C3985213F74A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79BE1721B38F7E7CBEA7B0AB5E2CE601 /* Foundation.framework in Frameworks */,
+				42D73C88D15D29F1C0AB6A138A6469F8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,18 +82,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE9B0F2E5F4DBAC84D56CEE38F685EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE7D1581B75F02FE1CA4B95982CDCFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D3771F6EEE176D0B83D5CE6FC553D71 /* Support Files */ = {
+		2D2074B3E4FD2F7052C5ADC2026CB7FF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5665D0B890869201F1CF425195D4A52 /* MSDynamicsDrawerViewController.xcconfig */,
-				A68E4FC13ABD7F697C070B566DC18267 /* MSDynamicsDrawerViewController-dummy.m */,
-				2B2D87EBF645EF29B192483A405B93BA /* MSDynamicsDrawerViewController-prefix.pch */,
+				7CB465FD2AA8666EC0424E6F5D60B727 /* DropdownMenu.xcconfig */,
+				C2E18DDD2A999F1898F3FD0A8A194258 /* DropdownMenu-dummy.m */,
+				C6980549303CFEFA1731682C08113FE1 /* DropdownMenu-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MSDynamicsDrawerViewController";
+			path = "../Target Support Files/DropdownMenu";
 			sourceTree = "<group>";
 		};
 		2FA8AEE0E4CAC47CDFF03DEB1A3FDC70 /* Pods-CounselingApp */ = {
@@ -126,65 +119,56 @@
 			path = "Target Support Files/Pods-CounselingApp";
 			sourceTree = "<group>";
 		};
-		3194C2AC301899AC708D65826E667BCF /* Pods */ = {
+		3A4F34025CA70EA44268BF579E3348DD /* DropdownMenu */ = {
 			isa = PBXGroup;
 			children = (
-				A0A74634C19B818C037BE19E0E6EF61A /* DropdownMenu */,
-				37E063130A0166CDCC14008DF2E43AA5 /* MSDynamicsDrawerViewController */,
+				8A5E5EB6BB02EF6C7B081D72682AD768 /* DropdownMenuController.h */,
+				383845CEFCE625524E46682C52A1DEEB /* DropdownMenuController.m */,
+				B0B1D343C1B8A866A7203E40F5B47C0B /* DropdownMenuSegue.h */,
+				87AA750772193F70E1EF40274F40926A /* DropdownMenuSegue.m */,
+				2D2074B3E4FD2F7052C5ADC2026CB7FF /* Support Files */,
 			);
-			name = Pods;
+			path = DropdownMenu;
 			sourceTree = "<group>";
 		};
-		37E063130A0166CDCC14008DF2E43AA5 /* MSDynamicsDrawerViewController */ = {
+		3C2EE583461686D6A71E1178F80205EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7A335B4173297E5B47FD4DF1E7F4C1A3 /* MSDynamicsDrawerStyler.h */,
-				971D090A2ECE94B547B98CD371146A52 /* MSDynamicsDrawerStyler.m */,
-				1A01836FA6C4F87D66A7DAA7235D8BB4 /* MSDynamicsDrawerViewController.h */,
-				9B62939FD30AFA02AF6FF81BC6297071 /* MSDynamicsDrawerViewController.m */,
-				1D3771F6EEE176D0B83D5CE6FC553D71 /* Support Files */,
+				9A40390D502511A4A855F628C19B28AC /* libDropdownMenu.a */,
+				4D8D25FD6727C100B130B832F4F47CCC /* libLGSideMenuController.a */,
+				1E38E8E6BF515F1CD85C6F6EEC2E938B /* libPods-CounselingApp.a */,
 			);
-			path = MSDynamicsDrawerViewController;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				89F803C7E2D77E11F2120CB28FE0B795 /* iOS */,
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5521A06A73BDD1C02ACA76220DA268B6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				360690EFC0169D5CE1EF2058CF2B1767 /* LGSideMenuController.xcconfig */,
+				C504ECF1B4BA4FB7E3CED624DBA6ECC4 /* LGSideMenuController-dummy.m */,
+				7DF79E5A2BAB930CEF13E21BE8A4F1EA /* LGSideMenuController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LGSideMenuController";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				3194C2AC301899AC708D65826E667BCF /* Pods */,
-				840F70C754A19A3FFD85DE21D1E3A321 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F37B97D7A89D9BD248466E8FD778FFB1 /* Pods */,
+				3C2EE583461686D6A71E1178F80205EF /* Products */,
 				848BE5B64FFF87D163EBBA9E8CF7F8F7 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7DDA69B00C81CC2D5D84CC0977ABFE11 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				54F115F07C472224F10155650BB27C80 /* DropdownMenu.xcconfig */,
-				70DF4B344BBC0BDA1C6D163725D1ED61 /* DropdownMenu-dummy.m */,
-				1F596FFF3D0E0EDF4988D28AD21F632F /* DropdownMenu-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DropdownMenu";
-			sourceTree = "<group>";
-		};
-		840F70C754A19A3FFD85DE21D1E3A321 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				01210C433BAFAD2DCD8C2CCACC28E3D8 /* libDropdownMenu.a */,
-				3E3C72AFA34FA4EDAFBB2AC3FAD35723 /* libMSDynamicsDrawerViewController.a */,
-				45CB52DA1F0F880820AE22E65C530A3E /* libPods-CounselingApp.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		848BE5B64FFF87D163EBBA9E8CF7F8F7 /* Targets Support Files */ = {
@@ -195,25 +179,31 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		89F803C7E2D77E11F2120CB28FE0B795 /* iOS */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				90AAE8973B935FD4979EEDFB8B1E12AC /* Foundation.framework */,
-				EB0B5C34B0704CE42DB8ACE437DB6B71 /* QuartzCore.framework */,
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A0A74634C19B818C037BE19E0E6EF61A /* DropdownMenu */ = {
+		F37B97D7A89D9BD248466E8FD778FFB1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1087821E3CED6823BB68049FDF69A551 /* DropdownMenuController.h */,
-				B3D1ADF406EF8CC8BDE23D7A7D20B713 /* DropdownMenuController.m */,
-				27E40151BDF64F4CEB5D753300F77DB3 /* DropdownMenuSegue.h */,
-				BCBEDB5C8B407CF6A446150E0EDE8F5F /* DropdownMenuSegue.m */,
-				7DDA69B00C81CC2D5D84CC0977ABFE11 /* Support Files */,
+				3A4F34025CA70EA44268BF579E3348DD /* DropdownMenu */,
+				FC0552F797E39D3E81A8A6DFE37DB5DE /* LGSideMenuController */,
 			);
-			path = DropdownMenu;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC0552F797E39D3E81A8A6DFE37DB5DE /* LGSideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				CA6740BF96CDAC6CFB75D3697A319FAC /* LGSideMenuController.h */,
+				ABCC6BFC61890C2447173A937BC0C438 /* LGSideMenuController.m */,
+				5521A06A73BDD1C02ACA76220DA268B6 /* Support Files */,
+			);
+			path = LGSideMenuController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,51 +218,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FA725D78693AC3817FD411EEEEF4AF1 /* Headers */ = {
+		0E733F59DA44A870815FA53EF29FCEA4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				192D8D23AA58B13DE025C2EB37FBC126 /* MSDynamicsDrawerStyler.h in Headers */,
-				7C995EAED480D8B85902A9C9DED501A3 /* MSDynamicsDrawerViewController.h in Headers */,
+				560463BFF25A288B22E2ACE7863FF3A5 /* LGSideMenuController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5BC73F5BFA232F2264612B04B9D43B8F /* Pods-CounselingApp */ = {
+		71B76793A3B7514D38CE8C93A9B8C8F4 /* LGSideMenuController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69730F4185A0002B9D87C94869572B4A /* Build configuration list for PBXNativeTarget "Pods-CounselingApp" */;
+			buildConfigurationList = 75F88A7E7C612B3BDCDDF577C78FB504 /* Build configuration list for PBXNativeTarget "LGSideMenuController" */;
 			buildPhases = (
-				B8E0A11F9BC6E12143EFF75E8C9ABDD7 /* Sources */,
-				68CB3438658A9B574D99C3985213F74A /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AFA01A1D250DA34CCE9C9C2EC6B78508 /* PBXTargetDependency */,
-				3B5256513F8B91E293A1CBE9901FD334 /* PBXTargetDependency */,
-			);
-			name = "Pods-CounselingApp";
-			productName = "Pods-CounselingApp";
-			productReference = 45CB52DA1F0F880820AE22E65C530A3E /* libPods-CounselingApp.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		A6C28B8A2F8E7ADC95190854F81EB5E5 /* MSDynamicsDrawerViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF1CCC1791D67A992092EE0699DF7FC6 /* Build configuration list for PBXNativeTarget "MSDynamicsDrawerViewController" */;
-			buildPhases = (
-				47B58A421C0496894923E721F592DD2C /* Sources */,
-				3036CEA5BFB5E0D72AC5B652301EF7E0 /* Frameworks */,
-				7FA725D78693AC3817FD411EEEEF4AF1 /* Headers */,
+				5047DA5068A8F9A08B358F8751A331CD /* Sources */,
+				B68724DD5E1F8E463134F92BF70C84F9 /* Frameworks */,
+				0E733F59DA44A870815FA53EF29FCEA4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MSDynamicsDrawerViewController;
-			productName = MSDynamicsDrawerViewController;
-			productReference = 3E3C72AFA34FA4EDAFBB2AC3FAD35723 /* libMSDynamicsDrawerViewController.a */;
+			name = LGSideMenuController;
+			productName = LGSideMenuController;
+			productReference = 4D8D25FD6727C100B130B832F4F47CCC /* libLGSideMenuController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		CDF7EB458C979A28FEA0659765406BEF /* DropdownMenu */ = {
@@ -289,7 +260,25 @@
 			);
 			name = DropdownMenu;
 			productName = DropdownMenu;
-			productReference = 01210C433BAFAD2DCD8C2CCACC28E3D8 /* libDropdownMenu.a */;
+			productReference = 9A40390D502511A4A855F628C19B28AC /* libDropdownMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE05CA8855F57484299E7D3234E8FFE5 /* Pods-CounselingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B50B8DBDB1B9B2EAC5437C982DC1400A /* Build configuration list for PBXNativeTarget "Pods-CounselingApp" */;
+			buildPhases = (
+				1A3B8B9D50D7F74ED42E9448CA56F7C8 /* Sources */,
+				CE9B0F2E5F4DBAC84D56CEE38F685EC1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				296BD514E155AEB2138EFC41D3297DBA /* PBXTargetDependency */,
+				88C65EC1C85A89B23194BA764CCD2F74 /* PBXTargetDependency */,
+			);
+			name = "Pods-CounselingApp";
+			productName = "Pods-CounselingApp";
+			productReference = 1E38E8E6BF515F1CD85C6F6EEC2E938B /* libPods-CounselingApp.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -309,25 +298,32 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 840F70C754A19A3FFD85DE21D1E3A321 /* Products */;
+			productRefGroup = 3C2EE583461686D6A71E1178F80205EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CDF7EB458C979A28FEA0659765406BEF /* DropdownMenu */,
-				A6C28B8A2F8E7ADC95190854F81EB5E5 /* MSDynamicsDrawerViewController */,
-				5BC73F5BFA232F2264612B04B9D43B8F /* Pods-CounselingApp */,
+				71B76793A3B7514D38CE8C93A9B8C8F4 /* LGSideMenuController */,
+				CE05CA8855F57484299E7D3234E8FFE5 /* Pods-CounselingApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		47B58A421C0496894923E721F592DD2C /* Sources */ = {
+		1A3B8B9D50D7F74ED42E9448CA56F7C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1DCC9FD4E9D9688DB80262E852FF60 /* MSDynamicsDrawerStyler.m in Sources */,
-				DD379664F30DF5ACB3F841AD9BE9BD79 /* MSDynamicsDrawerViewController-dummy.m in Sources */,
-				219D26F50BB7733DC325C1AD4C97EBBE /* MSDynamicsDrawerViewController.m in Sources */,
+				F0432601DDE399C40EE8A6309D4F0863 /* Pods-CounselingApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5047DA5068A8F9A08B358F8751A331CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98641680EB850D23A47554D9704DD4F /* LGSideMenuController-dummy.m in Sources */,
+				BC997F172EEC0D059AB137CD2BA88FB4 /* LGSideMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,43 +337,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8E0A11F9BC6E12143EFF75E8C9ABDD7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C1B695377F06A10EA34162CF9D96B3CB /* Pods-CounselingApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B5256513F8B91E293A1CBE9901FD334 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MSDynamicsDrawerViewController;
-			target = A6C28B8A2F8E7ADC95190854F81EB5E5 /* MSDynamicsDrawerViewController */;
-			targetProxy = F9C81D23CFB3EF03E6C6FD1A9DB32198 /* PBXContainerItemProxy */;
-		};
-		AFA01A1D250DA34CCE9C9C2EC6B78508 /* PBXTargetDependency */ = {
+		296BD514E155AEB2138EFC41D3297DBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DropdownMenu;
 			target = CDF7EB458C979A28FEA0659765406BEF /* DropdownMenu */;
-			targetProxy = D52B3293F99673EB1B7C6FAC6D5CC922 /* PBXContainerItemProxy */;
+			targetProxy = 0084FD19ABD4C1D6676E677B5CEFAAFD /* PBXContainerItemProxy */;
+		};
+		88C65EC1C85A89B23194BA764CCD2F74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LGSideMenuController;
+			target = 71B76793A3B7514D38CE8C93A9B8C8F4 /* LGSideMenuController */;
+			targetProxy = 517D4925CA06C7010D5BE17453766600 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10CD32C859100AD53F1B9FFAFBE49C0C /* Debug */ = {
+		11BC0CCD57E604B24E3FE089C8A26CF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7161C715A077EA1B12DB6DB7DFE7BD9E /* Pods-CounselingApp.debug.xcconfig */;
+			baseConfigurationReference = 72162605713C5B10105BF062E063F845 /* Pods-CounselingApp.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -386,7 +374,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -426,26 +414,47 @@
 			};
 			name = Release;
 		};
-		71E47A2909101B9148285ECD1838D044 /* Release */ = {
+		602840A1ACE0EBD123B90FCF6143D0E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72162605713C5B10105BF062E063F845 /* Pods-CounselingApp.release.xcconfig */;
+			baseConfigurationReference = 360690EFC0169D5CE1EF2058CF2B1767 /* LGSideMenuController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		775271BDB17965D3567378A905678A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360690EFC0169D5CE1EF2058CF2B1767 /* LGSideMenuController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -491,7 +500,7 @@
 		};
 		D175F8C5D81627A36AD861EF0EC1BF9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54F115F07C472224F10155650BB27C80 /* DropdownMenu.xcconfig */;
+			baseConfigurationReference = 7CB465FD2AA8666EC0424E6F5D60B727 /* DropdownMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -510,43 +519,22 @@
 			};
 			name = Debug;
 		};
-		D7C453726D316524E8AE281CD0AE3637 /* Release */ = {
+		FBDFF12E3A6E7BFB2A364A37A963B9DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5665D0B890869201F1CF425195D4A52 /* MSDynamicsDrawerViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MSDynamicsDrawerViewController/MSDynamicsDrawerViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		DE3AC9C7B5377FCB0FBBC15CE1BDAC64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5665D0B890869201F1CF425195D4A52 /* MSDynamicsDrawerViewController.xcconfig */;
+			baseConfigurationReference = 7161C715A077EA1B12DB6DB7DFE7BD9E /* Pods-CounselingApp.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MSDynamicsDrawerViewController/MSDynamicsDrawerViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -554,7 +542,7 @@
 		};
 		FFB798D34ECF906FF5786FA7CE7609BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54F115F07C472224F10155650BB27C80 /* DropdownMenu.xcconfig */;
+			baseConfigurationReference = 7CB465FD2AA8666EC0424E6F5D60B727 /* DropdownMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -585,11 +573,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69730F4185A0002B9D87C94869572B4A /* Build configuration list for PBXNativeTarget "Pods-CounselingApp" */ = {
+		75F88A7E7C612B3BDCDDF577C78FB504 /* Build configuration list for PBXNativeTarget "LGSideMenuController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				10CD32C859100AD53F1B9FFAFBE49C0C /* Debug */,
-				71E47A2909101B9148285ECD1838D044 /* Release */,
+				775271BDB17965D3567378A905678A81 /* Debug */,
+				602840A1ACE0EBD123B90FCF6143D0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B50B8DBDB1B9B2EAC5437C982DC1400A /* Build configuration list for PBXNativeTarget "Pods-CounselingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDFF12E3A6E7BFB2A364A37A963B9DA /* Debug */,
+				11BC0CCD57E604B24E3FE089C8A26CF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -599,15 +596,6 @@
 			buildConfigurations = (
 				D175F8C5D81627A36AD861EF0EC1BF9B /* Debug */,
 				FFB798D34ECF906FF5786FA7CE7609BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF1CCC1791D67A992092EE0699DF7FC6 /* Build configuration list for PBXNativeTarget "MSDynamicsDrawerViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE3AC9C7B5377FCB0FBBC15CE1BDAC64 /* Debug */,
-				D7C453726D316524E8AE281CD0AE3637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

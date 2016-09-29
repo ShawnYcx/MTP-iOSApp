@@ -2,6 +2,6 @@ target 'CounselingApp' do
   # Pods for CounselingApp
 
 	pod 'DropdownMenu'
-	pod 'MSDynamicsDrawerViewController'
+	pod 'LGSideMenuController', '~> 1.0.0'
 
 end
