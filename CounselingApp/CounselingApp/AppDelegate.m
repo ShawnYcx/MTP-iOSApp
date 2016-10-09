@@ -11,6 +11,7 @@
 #import "FrontViewController.h"
 #import "RearViewController.h"
 #import "RightViewController.h"
+#import "LeftMenuController.h"
 
 @interface AppDelegate ()
 @end
@@ -31,16 +32,17 @@
     FrontViewController *frontViewController = (FrontViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"MainMenu"];
     
     
-    RearViewController *rearViewController = (RearViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"LeftMenu"];;
-    RightViewController *rightViewController = rightViewController = [[RightViewController alloc] init];
+    LeftMenuController *leftViewController = (LeftMenuController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"LeftMenu"];;
+//    RightViewController *rightViewController = rightViewController = [[RightViewController alloc] init];
     
     UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithRootViewController:frontViewController];
-    UINavigationController *rearNavigationController = [[UINavigationController alloc] initWithRootViewController:rearViewController];
     
-    SWRevealViewController *revealController = [[SWRevealViewController alloc] initWithRearViewController:rearNavigationController frontViewController:frontNavigationController];
+//    UINavigationController *rearNavigationController = [[UINavigationController alloc] initWithRootViewController:leftViewController];
+    
+    SWRevealViewController *revealController = [[SWRevealViewController alloc] initWithRearViewController:leftViewController frontViewController:frontNavigationController];
     
     revealController.delegate = self;
-    revealController.rightViewController = rightViewController;
+//    revealController.rightViewController = rightViewController;
     self.viewController = revealController;
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

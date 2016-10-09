@@ -25,9 +25,10 @@
     [revealController panGestureRecognizer];
     [revealController tapGestureRecognizer];
     //Add an image to your project & set that image here.
+    UIImage *MenuIcon = [UIImage imageNamed:@"Menu_Icon"];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Left" style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Right" style:UIBarButtonItemStylePlain target:revealController action:@selector(rightRevealToggle:)];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Right" style:UIBarButtonItemStylePlain target:revealController action:@selector(rightRevealToggle:)];
 }
 
 - (void)didReceiveMemoryWarning {
