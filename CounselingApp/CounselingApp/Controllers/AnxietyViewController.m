@@ -8,8 +8,13 @@
 
 #import "AnxietyViewController.h"
 #import "SWRevealViewController.h"
+#import "EditViewController.h"
 
-@interface AnxietyViewController ()
+@interface AnxietyViewController (){
+    NSArray *_paths;
+    NSString *_documentsDirectory;
+    NSString *_path;
+}
 @end
 
 @implementation AnxietyViewController
@@ -23,12 +28,23 @@
     [revealController tapGestureRecognizer];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    _paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    _documentsDirectory = [_paths objectAtIndex:0];
+    _path = [_documentsDirectory stringByAppendingPathComponent:@"Test.plist"];
     
-    // Find out the path of recipes.plist
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"plist"];
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:_path];
     
+    self.pageTitle.text = [dict objectForKey:@"Title"][0];
+    self.thumbImg.image = [UIImage imageNamed:[dict objectForKey:@"Thumbnail"][0]];
+    self.contentLabel.text = [dict objectForKey:@"Content"][0];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+    
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:_path];
     // Load the file content and read the data into arrays
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     
     self.pageTitle.text = [dict objectForKey:@"Title"][0];
     self.thumbImg.image = [UIImage imageNamed:[dict objectForKey:@"Thumbnail"][0]];
@@ -40,14 +56,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+#pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    EditViewController *destViewController = segue.destinationViewController;
+    destViewController.content = self.contentLabel.text;
+    destViewController.toEdit = 0;
 }
-*/
 
 @end

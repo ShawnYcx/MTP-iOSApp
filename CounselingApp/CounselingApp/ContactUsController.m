@@ -19,7 +19,6 @@
     [super viewDidLoad];
     self.title = NSLocalizedString(@"Contact Us", nil);
     SWRevealViewController *revealController = [self revealViewController];
-    
     [revealController panGestureRecognizer];
     [revealController tapGestureRecognizer];
     

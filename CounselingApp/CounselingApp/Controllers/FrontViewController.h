@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FrontViewController : UIViewController
+- (IBAction)callEmergency:(id)sender;
 
 @end

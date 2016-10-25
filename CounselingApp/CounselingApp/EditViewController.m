@@ -14,25 +14,33 @@
 
 @implementation EditViewController
 
+@synthesize contentEdit;
+@synthesize content;
+@synthesize toEdit;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.contentEdit.text = content;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (IBAction)saveChanges:(id)sender {
+    NSMutableArray *tempSave;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Test.plist"];
     
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile: path];
+    
+    tempSave = [dict objectForKey:@"Content"];
+    tempSave[toEdit] = self.contentEdit.text;
+    [dict setObject:tempSave forKey:@"Content"];
+    
+    [dict writeToFile:path atomically:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

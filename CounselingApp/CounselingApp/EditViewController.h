@@ -10,5 +10,7 @@
 
 @interface EditViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *contentEdit;
+@property (nonatomic, strong) NSString *content;
+@property int toEdit;
 
 @end
