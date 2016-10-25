@@ -6,6 +6,7 @@
 //  Copyright © 2016 ACU. All rights reserved.
 //
 
+#import "SWRevealViewController.h"
 #import "ContactUsController.h"
 
 @interface ContactUsController ()
@@ -16,6 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = NSLocalizedString(@"Contact Us", nil);
+    SWRevealViewController *revealController = [self revealViewController];
+    
+    [revealController panGestureRecognizer];
+    [revealController tapGestureRecognizer];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
     
 }
 
@@ -40,7 +48,7 @@
     // Email Content
     NSString *messageBody = @"<h1>Learning iOS Programming!</h1>"; // Change the message body to HTML
     // To address
-    NSArray *toRecipents = [NSArray arrayWithObject:@"shawnycx@acu.edu"];
+    NSArray *toRecipents = [NSArray arrayWithObject:@"email@acu.edu"];
     
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;

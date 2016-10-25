@@ -1,25 +1,23 @@
 //
-//  FrontViewController.m
+//  DepressionViewController.m
 //  CounselingApp
 //
-//  Created by shawn yap on 9/29/16.
+//  Created by shawn yap on 10/20/16.
 //  Copyright © 2016 ACU. All rights reserved.
 //
 
-#import "FrontViewController.h"
+#import "DepressionViewController.h"
 #import "SWRevealViewController.h"
 
-@interface FrontViewController ()
+@interface DepressionViewController ()
 
 @end
 
-@implementation FrontViewController
+@implementation DepressionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.title = NSLocalizedString(@"Main Menu", nil);
-//    self.view.backgroundColor = [UIColor redColor];
+    self.title = NSLocalizedString(@"Depression", nil);
     SWRevealViewController *revealController = [self revealViewController];
     
     [revealController panGestureRecognizer];
@@ -27,6 +25,15 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
     
+    // Find out the path of recipes.plist
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"plist"];
+    
+    // Load the file content and read the data into arrays
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+
+    self.pageTitle.text = [dict objectForKey:@"Title"][1];
+    self.thumbImg.image = [UIImage imageNamed:[dict objectForKey:@"Thumbnail"][1]];
+    self.contentLabel.text = [dict objectForKey:@"Content"][1];
 }
 
 - (void)didReceiveMemoryWarning {

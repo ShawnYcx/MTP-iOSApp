@@ -9,8 +9,6 @@
 #import "AppDelegate.h"
 #import "SWRevealViewController.h"
 #import "FrontViewController.h"
-#import "RearViewController.h"
-#import "RightViewController.h"
 #import "LeftMenuController.h"
 
 @interface AppDelegate ()
@@ -18,34 +16,8 @@
 
 @implementation AppDelegate
 
-@synthesize window = _window;
-@synthesize viewController = _viewController;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window = window;
-    
-    // Instantiating main menu page by story board
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
-                                                             bundle: nil];
-    FrontViewController *frontViewController = (FrontViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"MainMenu"];
-    
-    
-    LeftMenuController *leftViewController = (LeftMenuController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"LeftMenu"];;
-//    RightViewController *rightViewController = rightViewController = [[RightViewController alloc] init];
-    
-    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithRootViewController:frontViewController];
-    
-//    UINavigationController *rearNavigationController = [[UINavigationController alloc] initWithRootViewController:leftViewController];
-    
-    SWRevealViewController *revealController = [[SWRevealViewController alloc] initWithRearViewController:leftViewController frontViewController:frontNavigationController];
-    
-    revealController.delegate = self;
-//    revealController.rightViewController = rightViewController;
-    self.viewController = revealController;
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
     
     return YES;
 }

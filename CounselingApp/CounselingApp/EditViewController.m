@@ -1,27 +1,25 @@
 //
-//  RightViewController.m
+//  EditViewController.m
 //  CounselingApp
 //
-//  Created by shawn yap on 9/29/16.
+//  Created by shawn yap on 10/24/16.
 //  Copyright © 2016 ACU. All rights reserved.
 //
 
-#import "RightViewController.h"
+#import "EditViewController.h"
 
-@interface RightViewController ()
+@interface EditViewController ()
 
 @end
 
-@implementation RightViewController
+@implementation EditViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*
@@ -33,5 +31,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)saveChanges:(id)sender {
+    
+}
 
 @end
