@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LaunchViewController : UIViewController
-- (IBAction)testBtn:(id)sender;
+- (IBAction)EmergencyCall:(id)sender;
 
 @end

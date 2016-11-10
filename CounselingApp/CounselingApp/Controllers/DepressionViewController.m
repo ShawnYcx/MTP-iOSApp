@@ -20,7 +20,6 @@
 @end
 
 @implementation DepressionViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     _delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -70,7 +69,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Bold string

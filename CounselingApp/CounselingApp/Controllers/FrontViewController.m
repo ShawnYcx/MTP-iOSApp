@@ -13,15 +13,12 @@
 @interface FrontViewController (){
     AppDelegate *_delegate;
 }
-
 @end
 
 @implementation FrontViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     _delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"Main Menu", nil);
     SWRevealViewController *revealController = [self revealViewController];
     
@@ -36,7 +33,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)callEmergency:(id)sender {

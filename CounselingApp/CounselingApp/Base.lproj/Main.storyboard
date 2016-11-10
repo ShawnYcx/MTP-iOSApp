@@ -35,7 +35,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Yvd-xy-d03" secondAttribute="trailing" constant="8" id="26u-bg-cRI"/>
                                     <constraint firstAttribute="width" constant="343" id="5w3-si-k7H"/>
@@ -59,7 +59,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="Frq-0Z-VDS"/>
                                     <constraint firstAttribute="bottom" secondItem="W5N-7g-Bj7" secondAttribute="bottom" constant="8" id="Kmg-KQ-qkZ"/>
@@ -83,7 +83,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="fPj-u4-Wac" secondAttribute="bottom" constant="8" id="2W8-0q-Zfs"/>
                                     <constraint firstAttribute="width" constant="343" id="8Nz-1y-0gE"/>
@@ -109,7 +109,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="o8h-wO-TH4" firstAttribute="leading" secondItem="1AS-Fu-Re4" secondAttribute="leading" constant="8" id="9a1-XB-fbq"/>
                                     <constraint firstItem="o8h-wO-TH4" firstAttribute="top" secondItem="1AS-Fu-Re4" secondAttribute="top" constant="10" id="apr-6Z-wgn"/>
@@ -311,7 +311,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="52" sectionHeaderHeight="18" sectionFooterHeight="18" id="HMt-Y7-Sif">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="dZ5-iX-MuR">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
@@ -324,7 +324,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                             <constraints>
                                 <constraint firstItem="L2j-TA-Wes" firstAttribute="centerX" secondItem="dZ5-iX-MuR" secondAttribute="centerX" constant="-11" id="92c-Lb-L3Q"/>
                                 <constraint firstAttribute="bottom" secondItem="L2j-TA-Wes" secondAttribute="bottom" constant="21" id="RvV-Yd-6d4"/>
@@ -350,7 +350,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <connections>
                                     <outlet property="textLabel" destination="cml-Wc-uhf" id="zNi-AF-fOK"/>
                                     <segue destination="Cw0-ds-Pga" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="yXW-ZY-4fr"/>
@@ -372,7 +372,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <connections>
                                     <outlet property="textLabel" destination="QWb-BD-KmY" id="ptH-Si-nDr"/>
                                     <segue destination="cZP-Ff-88R" kind="custom" identifier="Open_Anxiety" customClass="SWRevealViewControllerSeguePushController" id="hvN-Ab-Yo9"/>
@@ -394,7 +394,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <connections>
                                     <outlet property="textLabel" destination="oPv-Fr-bhW" id="yo2-ua-Kwe"/>
                                     <segue destination="b7a-Ec-6i1" kind="custom" identifier="Open_Depression" customClass="SWRevealViewControllerSeguePushController" id="rDu-tV-jpL"/>
@@ -416,7 +416,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <connections>
                                     <outlet property="textLabel" destination="O7I-3P-mlE" id="ClV-ux-9qG"/>
                                     <segue destination="SRE-EM-cvk" kind="custom" identifier="Open_Resource" customClass="SWRevealViewControllerSeguePushController" id="pyd-Ak-pg9"/>
@@ -438,7 +438,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <connections>
                                     <outlet property="textLabel" destination="xGo-oK-jb2" id="6jj-cv-CCF"/>
                                     <segue destination="xIg-qM-DQL" kind="custom" identifier="Open_Settings" customClass="SWRevealViewControllerSeguePushController" id="y09-6H-JaW"/>
@@ -465,7 +465,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YOl-pX-JPT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -522,7 +522,7 @@
                                         <rect key="frame" x="8" y="0.0" width="107" height="40"/>
                                         <state key="normal" title="Emergency Call"/>
                                         <connections>
-                                            <action selector="testBtn:" destination="Eeo-Rx-TD1" eventType="touchUpInside" id="ISv-2r-nEp"/>
+                                            <action selector="EmergencyCall:" destination="Eeo-Rx-TD1" eventType="touchUpInside" id="vF6-L7-VWk"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -645,10 +645,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xIg-qM-DQL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dOF-md-RjT"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OzU-5e-y1n">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="OzU-5e-y1n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -671,7 +671,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h5M-8J-nv4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -884,10 +884,10 @@ If you’ve taken self-help steps and made positive lifestyle changes and still 
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b7a-Ec-6i1" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rmE-gn-6Nz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rmE-gn-6Nz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -1022,10 +1022,10 @@ If you’ve taken self-help steps and made positive lifestyle changes and still 
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SRE-EM-cvk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ap3-V9-vCL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ap3-V9-vCL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52435120830000004" green="0.15957362389999999" blue="0.90370037089999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" cyan="0.84999999999999998" magenta="1" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -1050,11 +1050,11 @@ If you’ve taken self-help steps and made positive lifestyle changes and still 
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="T2C-eW-RXw"/>
-        <segue reference="Zcw-eb-fAb"/>
-        <segue reference="4xm-Q4-FX5"/>
-        <segue reference="Eta-oB-4oe"/>
-        <segue reference="5Jg-YM-7x6"/>
+        <segue reference="63h-d8-yG3"/>
+        <segue reference="yXW-ZY-4fr"/>
+        <segue reference="8o7-fL-Keo"/>
         <segue reference="VKf-kF-u5x"/>
+        <segue reference="mdp-mS-JJW"/>
+        <segue reference="cjo-rL-ItG"/>
     </inferredMetricsTieBreakers>
 </document>
