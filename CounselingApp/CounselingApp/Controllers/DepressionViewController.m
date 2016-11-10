@@ -9,12 +9,13 @@
 #import "DepressionViewController.h"
 #import "SWRevealViewController.h"
 #import "EditViewController.h"
+#import "AppDelegate.h"
 
 @interface DepressionViewController (){
-    NSArray *_paths;
-    NSString *_documentsDirectory;
-    NSString *_path;
+    NSMutableDictionary *_dict;
+    AppDelegate *_delegate;
 }
+@property (weak, nonatomic) IBOutlet UIScrollView *ScrollView;
 
 @end
 
@@ -22,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
     self.title = NSLocalizedString(@"Depression", nil);
     SWRevealViewController *revealController = [self revealViewController];
     
@@ -31,24 +34,38 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
-    _paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    _documentsDirectory = [_paths objectAtIndex:0];
-    _path = [_documentsDirectory stringByAppendingPathComponent:@"Test.plist"];
     
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:_path];
+    NSString *path = [_delegate openPath];
+    _dict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     
-    self.pageTitle.text = [dict objectForKey:@"Title"][1];
-    self.thumbImg.image = [UIImage imageNamed:[dict objectForKey:@"Thumbnail"][1]];
-    self.contentLabel.text = [dict objectForKey:@"Content"][1];
+    self.pageTitle.text = [_dict objectForKey:@"Title"][1];
+    self.thumbImg.image = [UIImage imageNamed:[_dict objectForKey:@"Thumbnail"][1]];
+    self.thumbImg.layer.cornerRadius = 8.0;
+    self.thumbImg.layer.masksToBounds = YES;
+    
+    NSAttributedString *x = [self boldString:[_dict objectForKey:@"Content"][1]];
+    self.contentLabel.attributedText = x;
+    CGRect newFrame = self.contentLabel.frame;
+    CGRect updateFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height + newFrame.size.height - 284.5); // 284.5 is the original height of the label
+    
+    self.contentView.frame = updateFrame;
+    self.ScrollView.frame = updateFrame;
+    self.ScrollView.contentSize = CGSizeMake(updateFrame.size.width, updateFrame.size.height);
+    [self.view setNeedsLayout];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:_path];
-    // Load the file content and read the data into arrays
     
-    self.pageTitle.text = [dict objectForKey:@"Title"][1];
-    self.thumbImg.image = [UIImage imageNamed:[dict objectForKey:@"Thumbnail"][1]];
-    self.contentLabel.text = [dict objectForKey:@"Content"][1];
+    NSAttributedString *x = [self boldString:[_dict objectForKey:@"Content"][1]];
+    self.contentLabel.attributedText = x;
+    CGRect newFrame = self.contentLabel.frame;
+    CGRect updateFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height + newFrame.size.height - 284.5); // 284.5 is the original height of the label
+    
+    self.contentView.frame = updateFrame;
+    self.ScrollView.frame = updateFrame;
+    self.ScrollView.contentSize = CGSizeMake(updateFrame.size.width, updateFrame.size.height);
+
+    [self.view setNeedsLayout];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,6 +73,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Bold string
+
+- (NSAttributedString *)boldString:(NSString *)string {
+    UIFont *boldFont = [UIFont boldSystemFontOfSize:17];
+    NSMutableAttributedString *attributedDescription = [[NSMutableAttributedString alloc] initWithString:string];
+    
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@".*?<b>(.*?)<\\/b>.*?" options:NSRegularExpressionCaseInsensitive error:NULL];
+    
+    NSArray *myArray = [regex matchesInString:string options:0 range:NSMakeRange(0, string.length)] ;
+    for (NSTextCheckingResult *match in myArray) {
+        NSRange matchRange = [match rangeAtIndex:1];
+        [attributedDescription addAttribute:NSFontAttributeName value:boldFont range:matchRange];
+    }
+    while ([attributedDescription.string containsString:@"<b>"] || [attributedDescription.string containsString:@"</b>"]) {
+        NSRange rangeOfTag = [attributedDescription.string rangeOfString:@"<b>"];
+        [attributedDescription replaceCharactersInRange:rangeOfTag withString:@""];
+        rangeOfTag = [attributedDescription.string rangeOfString:@"</b>"];
+        [attributedDescription replaceCharactersInRange:rangeOfTag withString:@""];
+    }
+    return attributedDescription;
+}
 
 #pragma mark - Navigation
 

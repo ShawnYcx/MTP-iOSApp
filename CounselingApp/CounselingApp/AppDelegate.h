@@ -16,7 +16,10 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
+- (NSString*)openPath;
+- (void)showHomeScreen;
 - (void)saveContext;
+- (void)call;
 
 
 @end

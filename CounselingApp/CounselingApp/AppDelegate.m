@@ -111,4 +111,31 @@
     }
 }
 
+#pragma mark - shared functions
+
+- (void)showHomeScreen {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SWRevealViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"SWRevealViewController"];
+    
+    self.window.rootViewController = vc;
+}
+
+- (void)call {
+    NSString *phNo = @"+18177035594";
+    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt://%@",phNo]];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+        [[UIApplication sharedApplication] openURL:phoneUrl];
+    }
+}
+
+-(NSString*)openPath {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Test.plist"];
+    
+    return path;
+}
+
 @end

@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface AnxietyViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UIView *emergencyView;
 
+@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *thumbImg;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 @end

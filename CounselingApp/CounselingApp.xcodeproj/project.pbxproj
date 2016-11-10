@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		17A5D35E41B8786CE820E4B8 /* libPods-CounselingApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1D2F167BCAED3184C8F056 /* libPods-CounselingApp.a */; };
-		6104850B1DA3A07B00FEC195 /* ContactUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104850A1DA3A07B00FEC195 /* ContactUsController.m */; };
 		6104850D1DA3A0DD00FEC195 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6104850C1DA3A0DD00FEC195 /* MessageUI.framework */; };
 		61129FD61D95C18C00598211 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61129FD51D95C18C00598211 /* main.m */; };
 		61129FD91D95C18C00598211 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61129FD81D95C18C00598211 /* AppDelegate.m */; };
@@ -18,6 +17,8 @@
 		612F0AA11DA6412000518272 /* LeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F0AA01DA6412000518272 /* LeftMenuController.m */; };
 		614F56A51D9DC46A00E81973 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F56A41D9DC46A00E81973 /* FrontViewController.m */; };
 		614F56AC1D9DC4E500E81973 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F56AB1D9DC4E500E81973 /* SWRevealViewController.m */; };
+		6171444D1DD3D5EB00C5690B /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6171444C1DD3D5EB00C5690B /* LaunchViewController.m */; };
+		617144541DD3D82C00C5690B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617144531DD3D82C00C5690B /* SettingsViewController.m */; };
 		617CD93E1DBEB49A00C014F7 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617CD93D1DBEB49A00C014F7 /* EditViewController.m */; };
 		61FC95AD1DB89EF900C3BD98 /* Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61FC95AC1DB89EF900C3BD98 /* Test.plist */; };
 		61FC95B01DB8B24C00C3BD98 /* AnxietyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FC95AF1DB8B24C00C3BD98 /* AnxietyViewController.m */; };
@@ -27,8 +28,6 @@
 
 /* Begin PBXFileReference section */
 		5708E3658EB107E919A3214D /* Pods-CounselingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CounselingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CounselingApp/Pods-CounselingApp.debug.xcconfig"; sourceTree = "<group>"; };
-		610485091DA3A07B00FEC195 /* ContactUsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsController.h; sourceTree = "<group>"; };
-		6104850A1DA3A07B00FEC195 /* ContactUsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsController.m; sourceTree = "<group>"; };
 		6104850C1DA3A0DD00FEC195 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		61129FD11D95C18C00598211 /* CounselingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounselingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61129FD51D95C18C00598211 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,6 +43,10 @@
 		614F56A41D9DC46A00E81973 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrontViewController.m; path = Controllers/FrontViewController.m; sourceTree = "<group>"; };
 		614F56AA1D9DC4E500E81973 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		614F56AB1D9DC4E500E81973 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		6171444B1DD3D5EB00C5690B /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		6171444C1DD3D5EB00C5690B /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		617144521DD3D82C00C5690B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		617144531DD3D82C00C5690B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		617CD93C1DBEB49A00C014F7 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		617CD93D1DBEB49A00C014F7 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		61FC95AC1DB89EF900C3BD98 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
@@ -79,15 +82,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		610485081DA3A05500FEC195 /* Contact Us */ = {
-			isa = PBXGroup;
-			children = (
-				610485091DA3A07B00FEC195 /* ContactUsController.h */,
-				6104850A1DA3A07B00FEC195 /* ContactUsController.m */,
-			);
-			name = "Contact Us";
-			sourceTree = "<group>";
-		};
 		61129FC81D95C18C00598211 = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +106,6 @@
 				61129FD71D95C18C00598211 /* AppDelegate.h */,
 				61129FD81D95C18C00598211 /* AppDelegate.m */,
 				61129FE31D95C18C00598211 /* Assets.xcassets */,
-				610485081DA3A05500FEC195 /* Contact Us */,
 				614F569F1D9DC41300E81973 /* Controllers */,
 				61129FE81D95C18C00598211 /* Info.plist */,
 				61129FE51D95C18C00598211 /* LaunchScreen.storyboard */,
@@ -140,6 +133,7 @@
 				612F0A9F1DA6412000518272 /* LeftMenuController.h */,
 				612F0AA01DA6412000518272 /* LeftMenuController.m */,
 				61FC95B11DB8BF8D00C3BD98 /* Screens */,
+				6171444E1DD3D7D700C5690B /* Settings */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +147,15 @@
 			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		6171444E1DD3D7D700C5690B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				617144521DD3D82C00C5690B /* SettingsViewController.h */,
+				617144531DD3D82C00C5690B /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		61FC95B11DB8BF8D00C3BD98 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,10 +163,12 @@
 				61FC95AF1DB8B24C00C3BD98 /* AnxietyViewController.m */,
 				61FC95B21DB8BFB800C3BD98 /* DepressionViewController.h */,
 				61FC95B31DB8BFB800C3BD98 /* DepressionViewController.m */,
-				61FC95B51DB8BFC600C3BD98 /* ResourcesViewController.h */,
-				61FC95B61DB8BFC600C3BD98 /* ResourcesViewController.m */,
 				617CD93C1DBEB49A00C014F7 /* EditViewController.h */,
 				617CD93D1DBEB49A00C014F7 /* EditViewController.m */,
+				61FC95B51DB8BFC600C3BD98 /* ResourcesViewController.h */,
+				61FC95B61DB8BFC600C3BD98 /* ResourcesViewController.m */,
+				6171444B1DD3D5EB00C5690B /* LaunchViewController.h */,
+				6171444C1DD3D5EB00C5690B /* LaunchViewController.m */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -302,13 +307,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				61FC95B41DB8BFB800C3BD98 /* DepressionViewController.m in Sources */,
-				6104850B1DA3A07B00FEC195 /* ContactUsController.m in Sources */,
 				61FC95B01DB8B24C00C3BD98 /* AnxietyViewController.m in Sources */,
 				614F56A51D9DC46A00E81973 /* FrontViewController.m in Sources */,
+				6171444D1DD3D5EB00C5690B /* LaunchViewController.m in Sources */,
 				617CD93E1DBEB49A00C014F7 /* EditViewController.m in Sources */,
 				614F56AC1D9DC4E500E81973 /* SWRevealViewController.m in Sources */,
 				61FC95B71DB8BFC600C3BD98 /* ResourcesViewController.m in Sources */,
 				612F0AA11DA6412000518272 /* LeftMenuController.m in Sources */,
+				617144541DD3D82C00C5690B /* SettingsViewController.m in Sources */,
 				61129FD91D95C18C00598211 /* AppDelegate.m in Sources */,
 				61129FD61D95C18C00598211 /* main.m in Sources */,
 			);

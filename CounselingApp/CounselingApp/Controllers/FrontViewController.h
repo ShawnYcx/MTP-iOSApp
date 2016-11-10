@@ -10,5 +10,8 @@
 
 @interface FrontViewController : UIViewController
 - (IBAction)callEmergency:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *btnContainer1;
+@property (weak, nonatomic) IBOutlet UIView *btnContainer2;
+@property (weak, nonatomic) IBOutlet UIView *btnContainer3;
 
 @end

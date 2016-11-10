@@ -9,46 +9,59 @@
 #import "AnxietyViewController.h"
 #import "SWRevealViewController.h"
 #import "EditViewController.h"
+#import "AppDelegate.h"
 
 @interface AnxietyViewController (){
-    NSArray *_paths;
-    NSString *_documentsDirectory;
-    NSString *_path;
+    NSMutableDictionary *_dict;
+    AppDelegate *_delegate;
 }
+@property (weak, nonatomic) IBOutlet UIScrollView *ScrollView;
 @end
 
 @implementation AnxietyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = NSLocalizedString(@"Anxiety", nil);
-    SWRevealViewController *revealController = [self revealViewController];
+    _delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
+    self.title = NSLocalizedString(@"Anxiety", nil);
+    
+    SWRevealViewController *revealController = [self revealViewController];
     [revealController panGestureRecognizer];
     [revealController tapGestureRecognizer];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    _paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    _documentsDirectory = [_paths objectAtIndex:0];
-    _path = [_documentsDirectory stringByAppendingPathComponent:@"Test.plist"];
     
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:_path];
+    NSString *path = [_delegate openPath];
+    _dict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     
-    self.pageTitle.text = [dict objectForKey:@"Title"][0];
-    self.thumbImg.image = [UIImage imageNamed:[dict objectForKey:@"Thumbnail"][0]];
-    self.contentLabel.text = [dict objectForKey:@"Content"][0];
+    self.pageTitle.text = [_dict objectForKey:@"Title"][0];
+    self.thumbImg.image = [UIImage imageNamed:[_dict objectForKey:@"Thumbnail"][0]];
+    self.thumbImg.layer.cornerRadius = 8.0;
+    self.thumbImg.layer.masksToBounds = YES;
+    self.contentLabel.text = [_dict objectForKey:@"Content"][0];
+    
+    CGRect updateFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height + self.contentLabel.frame.size.height - 284.5); // 284.5 is the original height of the label
+    
+    self.contentView.frame = updateFrame;
+    self.ScrollView.frame = updateFrame;
+    self.ScrollView.contentSize = CGSizeMake(updateFrame.size.width, updateFrame.size.height);
+    [self.view setNeedsLayout];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    
-    
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithContentsOfFile:_path];
-    // Load the file content and read the data into arrays
-    
-    self.pageTitle.text = [dict objectForKey:@"Title"][0];
-    self.thumbImg.image = [UIImage imageNamed:[dict objectForKey:@"Thumbnail"][0]];
-    self.contentLabel.text = [dict objectForKey:@"Content"][0];
+    if ([self.contentLabel.text isEqualToString:[_dict objectForKey:@"Content"][0]]){
+        self.contentLabel.text = [_dict objectForKey:@"Content"][0];
+        CGRect newFrame = self.contentLabel.frame;
+        CGRect updateFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height + newFrame.size.height - 284.5); // 284.5 is the original height of the label
+        
+        self.contentView.frame = updateFrame;
+        self.ScrollView.frame = updateFrame;
+        self.ScrollView.contentSize = CGSizeMake(updateFrame.size.width, updateFrame.size.height);
+    }
+
+    [self.view setNeedsLayout];
 }
 
 - (void)didReceiveMemoryWarning {

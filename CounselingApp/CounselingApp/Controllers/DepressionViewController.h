@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DepressionViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UILabel *pageTitle;
 
 @property (weak, nonatomic) IBOutlet UIImageView *thumbImg;

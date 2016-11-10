@@ -8,8 +8,11 @@
 
 #import "FrontViewController.h"
 #import "SWRevealViewController.h"
+#import "AppDelegate.h"
 
-@interface FrontViewController ()
+@interface FrontViewController (){
+    AppDelegate *_delegate;
+}
 
 @end
 
@@ -17,9 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"Main Menu", nil);
-//    self.view.backgroundColor = [UIColor redColor];
     SWRevealViewController *revealController = [self revealViewController];
     
     [revealController panGestureRecognizer];
@@ -28,6 +31,7 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
+    [self initBtnCorners];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,11 +40,18 @@
 }
 
 - (IBAction)callEmergency:(id)sender {
-    NSString *phNo = @"+18177035594";
-    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt://%@",phNo]];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
-        [[UIApplication sharedApplication] openURL:phoneUrl];
+    [_delegate call];
+}
+
+-(void)initBtnCorners{
+    for (int i = 1; i <= 3; i++) {
+        [self.btnContainer1.layer setCornerRadius:8.0f];
+        [self.btnContainer2.layer setCornerRadius:8.0f];
+        [self.btnContainer3.layer setCornerRadius:8.0f];
+        
+        [self.btnContainer1.layer setMasksToBounds:YES];
+        [self.btnContainer2.layer setMasksToBounds:YES];
+        [self.btnContainer3.layer setMasksToBounds:YES];
     }
 }
 @end
