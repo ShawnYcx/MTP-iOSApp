@@ -1,7 +1,8 @@
-target 'CounselingApp' do
-  # Pods for CounselingApp
-
-	pod 'DropdownMenu'
-	pod 'LGSideMenuController', '~> 1.0.0'
-
-end
+function resourceScheduling (T[1..n]) 
+	m ← 0 ( , here) ← T[1]
+	for k = 2..n do
+		(s, e) ← T[k]
+		if s > here then
+			m ← m + 1
+			here ← e
+return m + 1
