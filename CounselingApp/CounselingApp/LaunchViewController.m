@@ -11,6 +11,7 @@
 
 @interface LaunchViewController (){
     AppDelegate *_delegate;
+    NSMutableDictionary *_dict;
 }
 @end
 
@@ -24,10 +25,13 @@
     [[UITapGestureRecognizer alloc] initWithTarget:self
                                             action:@selector(showHomeScreen:)];
     [self.view addGestureRecognizer:singleFingerTap];
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+    NSString *path = [_delegate openPath];
+    _dict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    
+    NSUInteger randIndex = arc4random_uniform(5);
+    self.verseLabel.text = [_dict objectForKey:@"Verses"][randIndex];
+    
 }
 
 - (IBAction)EmergencyCall:(id)sender {

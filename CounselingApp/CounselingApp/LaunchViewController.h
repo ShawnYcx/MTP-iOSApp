@@ -10,5 +10,6 @@
 
 @interface LaunchViewController : UIViewController
 - (IBAction)EmergencyCall:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *verseLabel;
 
 @end

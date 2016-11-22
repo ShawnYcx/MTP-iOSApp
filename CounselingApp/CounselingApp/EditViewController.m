@@ -27,6 +27,7 @@
     [super didReceiveMemoryWarning];
 }
 
+// This function updates the edited content to th plist
 - (IBAction)saveChanges:(id)sender {
     NSMutableArray *tempSave;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

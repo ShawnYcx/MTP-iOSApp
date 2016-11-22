@@ -8,6 +8,7 @@
 
 #import "SettingsViewController.h"
 #import "SWRevealViewController.h"
+#import "AdminCell.h"
 
 @interface SettingsViewController ()
 {
@@ -19,8 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _settingsItems = @[@"About"];
-    
     SWRevealViewController *revealController = [self revealViewController];
     
     [revealController panGestureRecognizer];
@@ -39,18 +38,31 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _settingsItems.count;
+    return 1;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *CellIdentifier = [_settingsItems objectAtIndex:indexPath.row];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    // Cells setup
+    static NSString *simpleTableIdentifier = @"cell";
+    AdminCell *cell = (AdminCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (indexPath.section == 0){
+        if (indexPath.row == 0){
+            cell.Label.text = @"About Us";
+        }
+    }
+    if (indexPath.section == 1) {
+        if (indexPath.row == 0){
+            cell.Label.text = @"Admin Login";
+            
+        }
+    }
+    
     
     return cell;
 }
@@ -67,6 +79,9 @@
         case 0:
             sectionName = NSLocalizedString(@"Know more about us", @"");
             break;
+        case 1:
+            sectionName = NSLocalizedString(@"Login for admin priviledges", @"");
+            break;
         default:
             sectionName = @"";
             break;
@@ -74,14 +89,31 @@
     return sectionName;
     
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *viewController = nil;
+    
+    if (indexPath.section == 0){
+        if (indexPath.row == 0){
+            viewController = [storyboard instantiateViewControllerWithIdentifier:@"AboutUs"];
+        }
+    }
+    if (indexPath.section == 1) {
+        if (indexPath.row == 0){
+            viewController = [storyboard instantiateViewControllerWithIdentifier:@"AdminViewController"];
+        }
+    }
+    
+    [[self navigationController] pushViewController:viewController animated:YES];
+    
+}
+
+#pragma mark - Navigation
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
 }
 */
-
 @end

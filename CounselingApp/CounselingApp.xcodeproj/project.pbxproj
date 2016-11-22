@@ -16,9 +16,13 @@
 		612F0AA11DA6412000518272 /* LeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F0AA01DA6412000518272 /* LeftMenuController.m */; };
 		614F56A51D9DC46A00E81973 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F56A41D9DC46A00E81973 /* FrontViewController.m */; };
 		614F56AC1D9DC4E500E81973 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614F56AB1D9DC4E500E81973 /* SWRevealViewController.m */; };
+		61571C941DDBA8F800079CBA /* Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 61571C931DDBA8F800079CBA /* Authentication.m */; };
 		6171444D1DD3D5EB00C5690B /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6171444C1DD3D5EB00C5690B /* LaunchViewController.m */; };
 		617144541DD3D82C00C5690B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617144531DD3D82C00C5690B /* SettingsViewController.m */; };
 		617CD93E1DBEB49A00C014F7 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617CD93D1DBEB49A00C014F7 /* EditViewController.m */; };
+		61C0B9081DE262D7003F57BA /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C0B9071DE262D7003F57BA /* AdminViewController.m */; };
+		61C0B90B1DE27D82003F57BA /* AdminCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C0B90A1DE27D82003F57BA /* AdminCell.m */; };
+		61C0B9111DE3801C003F57BA /* Bold+Text.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C0B9101DE3801C003F57BA /* Bold+Text.m */; };
 		61FC95AD1DB89EF900C3BD98 /* Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61FC95AC1DB89EF900C3BD98 /* Test.plist */; };
 		61FC95B01DB8B24C00C3BD98 /* AnxietyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FC95AF1DB8B24C00C3BD98 /* AnxietyViewController.m */; };
 		61FC95B41DB8BFB800C3BD98 /* DepressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FC95B31DB8BFB800C3BD98 /* DepressionViewController.m */; };
@@ -41,12 +45,20 @@
 		614F56A41D9DC46A00E81973 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrontViewController.m; path = Controllers/FrontViewController.m; sourceTree = "<group>"; };
 		614F56AA1D9DC4E500E81973 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		614F56AB1D9DC4E500E81973 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		61571C921DDBA8F800079CBA /* Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Authentication.h; path = CounselingApp/Authentication/Authentication.h; sourceTree = "<group>"; };
+		61571C931DDBA8F800079CBA /* Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Authentication.m; path = CounselingApp/Authentication/Authentication.m; sourceTree = "<group>"; };
 		6171444B1DD3D5EB00C5690B /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		6171444C1DD3D5EB00C5690B /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		617144521DD3D82C00C5690B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		617144531DD3D82C00C5690B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		617CD93C1DBEB49A00C014F7 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		617CD93D1DBEB49A00C014F7 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		61C0B9061DE262D7003F57BA /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdminViewController.h; path = Controllers/AdminViewController.h; sourceTree = "<group>"; };
+		61C0B9071DE262D7003F57BA /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdminViewController.m; path = Controllers/AdminViewController.m; sourceTree = "<group>"; };
+		61C0B9091DE27D82003F57BA /* AdminCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdminCell.h; path = Controllers/cels/AdminCell.h; sourceTree = "<group>"; };
+		61C0B90A1DE27D82003F57BA /* AdminCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdminCell.m; path = Controllers/cels/AdminCell.m; sourceTree = "<group>"; };
+		61C0B90F1DE3801C003F57BA /* Bold+Text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bold+Text.h"; path = "CounselingApp/API/Bold+Text.h"; sourceTree = "<group>"; };
+		61C0B9101DE3801C003F57BA /* Bold+Text.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Bold+Text.m"; path = "CounselingApp/API/Bold+Text.m"; sourceTree = "<group>"; };
 		61FC95AC1DB89EF900C3BD98 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
 		61FC95AE1DB8B24C00C3BD98 /* AnxietyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnxietyViewController.h; path = Controllers/AnxietyViewController.h; sourceTree = "<group>"; };
 		61FC95AF1DB8B24C00C3BD98 /* AnxietyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnxietyViewController.m; path = Controllers/AnxietyViewController.m; sourceTree = "<group>"; };
@@ -79,6 +91,10 @@
 		61129FC81D95C18C00598211 = {
 			isa = PBXGroup;
 			children = (
+				61C0B90F1DE3801C003F57BA /* Bold+Text.h */,
+				61C0B9101DE3801C003F57BA /* Bold+Text.m */,
+				61571C921DDBA8F800079CBA /* Authentication.h */,
+				61571C931DDBA8F800079CBA /* Authentication.m */,
 				61129FD31D95C18C00598211 /* CounselingApp */,
 				4EF45AB397625C4E183AC0A6 /* Frameworks */,
 				61129FD21D95C18C00598211 /* Products */,
@@ -121,8 +137,12 @@
 		614F569F1D9DC41300E81973 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				61C0B9061DE262D7003F57BA /* AdminViewController.h */,
+				61C0B9071DE262D7003F57BA /* AdminViewController.m */,
 				614F56A31D9DC46A00E81973 /* FrontViewController.h */,
 				614F56A41D9DC46A00E81973 /* FrontViewController.m */,
+				6171444B1DD3D5EB00C5690B /* LaunchViewController.h */,
+				6171444C1DD3D5EB00C5690B /* LaunchViewController.m */,
 				612F0A9F1DA6412000518272 /* LeftMenuController.h */,
 				612F0AA01DA6412000518272 /* LeftMenuController.m */,
 				61FC95B11DB8BF8D00C3BD98 /* Screens */,
@@ -143,6 +163,8 @@
 		6171444E1DD3D7D700C5690B /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				61C0B9091DE27D82003F57BA /* AdminCell.h */,
+				61C0B90A1DE27D82003F57BA /* AdminCell.m */,
 				617144521DD3D82C00C5690B /* SettingsViewController.h */,
 				617144531DD3D82C00C5690B /* SettingsViewController.m */,
 			);
@@ -160,8 +182,6 @@
 				617CD93D1DBEB49A00C014F7 /* EditViewController.m */,
 				61FC95B51DB8BFC600C3BD98 /* ResourcesViewController.h */,
 				61FC95B61DB8BFC600C3BD98 /* ResourcesViewController.m */,
-				6171444B1DD3D5EB00C5690B /* LaunchViewController.h */,
-				6171444C1DD3D5EB00C5690B /* LaunchViewController.m */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -246,10 +266,14 @@
 				617CD93E1DBEB49A00C014F7 /* EditViewController.m in Sources */,
 				614F56AC1D9DC4E500E81973 /* SWRevealViewController.m in Sources */,
 				61FC95B71DB8BFC600C3BD98 /* ResourcesViewController.m in Sources */,
+				61571C941DDBA8F800079CBA /* Authentication.m in Sources */,
+				61C0B9081DE262D7003F57BA /* AdminViewController.m in Sources */,
+				61C0B9111DE3801C003F57BA /* Bold+Text.m in Sources */,
 				612F0AA11DA6412000518272 /* LeftMenuController.m in Sources */,
 				617144541DD3D82C00C5690B /* SettingsViewController.m in Sources */,
 				61129FD91D95C18C00598211 /* AppDelegate.m in Sources */,
 				61129FD61D95C18C00598211 /* main.m in Sources */,
+				61C0B90B1DE27D82003F57BA /* AdminCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
