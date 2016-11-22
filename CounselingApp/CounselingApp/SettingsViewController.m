@@ -9,6 +9,7 @@
 #import "SettingsViewController.h"
 #import "SWRevealViewController.h"
 #import "AdminCell.h"
+#import "AlertDialog.h"
 
 @interface SettingsViewController ()
 {
@@ -20,6 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (![Authentication checkLogin]){
+        [self.signoutContainer setHidden:YES];
+    }else{
+        [self.signoutContainer setHidden:NO];
+    }
+    
     SWRevealViewController *revealController = [self revealViewController];
     
     [revealController panGestureRecognizer];
@@ -30,6 +37,14 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    if (![Authentication checkLogin]){
+        [self.signoutContainer setHidden:YES];
+    }else{
+        [self.signoutContainer setHidden:NO];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -38,6 +53,9 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    if ([Authentication checkLogin]){
+        return 1;
+    }
     return 2;
 }
 
@@ -116,4 +134,16 @@
     
 }
 */
+
+#pragma mark - Signout
+- (IBAction)signOut:(id)sender {
+    // Sets to 0 for logout
+    [Authentication updateToken:@"0"];
+    [AlertDialog showMessage:@"You have logged out" withTitle:@"Notice"];
+    // Delay function call by 1 second for smoother user experience
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self.signoutContainer setHidden:YES];
+        [self.tableView reloadData];
+    });
+}
 @end

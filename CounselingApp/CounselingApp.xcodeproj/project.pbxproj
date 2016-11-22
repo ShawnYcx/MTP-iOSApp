@@ -23,6 +23,7 @@
 		61C0B9081DE262D7003F57BA /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C0B9071DE262D7003F57BA /* AdminViewController.m */; };
 		61C0B90B1DE27D82003F57BA /* AdminCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C0B90A1DE27D82003F57BA /* AdminCell.m */; };
 		61C0B9111DE3801C003F57BA /* Bold+Text.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C0B9101DE3801C003F57BA /* Bold+Text.m */; };
+		61EED0711DE44DF60086641B /* AlertDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EED0701DE44DF60086641B /* AlertDialog.m */; };
 		61FC95AD1DB89EF900C3BD98 /* Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61FC95AC1DB89EF900C3BD98 /* Test.plist */; };
 		61FC95B01DB8B24C00C3BD98 /* AnxietyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FC95AF1DB8B24C00C3BD98 /* AnxietyViewController.m */; };
 		61FC95B41DB8BFB800C3BD98 /* DepressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FC95B31DB8BFB800C3BD98 /* DepressionViewController.m */; };
@@ -59,6 +60,8 @@
 		61C0B90A1DE27D82003F57BA /* AdminCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdminCell.m; path = Controllers/cels/AdminCell.m; sourceTree = "<group>"; };
 		61C0B90F1DE3801C003F57BA /* Bold+Text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bold+Text.h"; path = "CounselingApp/API/Bold+Text.h"; sourceTree = "<group>"; };
 		61C0B9101DE3801C003F57BA /* Bold+Text.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Bold+Text.m"; path = "CounselingApp/API/Bold+Text.m"; sourceTree = "<group>"; };
+		61EED06F1DE44DF60086641B /* AlertDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlertDialog.h; path = CounselingApp/API/AlertDialog.h; sourceTree = "<group>"; };
+		61EED0701DE44DF60086641B /* AlertDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlertDialog.m; path = CounselingApp/API/AlertDialog.m; sourceTree = "<group>"; };
 		61FC95AC1DB89EF900C3BD98 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
 		61FC95AE1DB8B24C00C3BD98 /* AnxietyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnxietyViewController.h; path = Controllers/AnxietyViewController.h; sourceTree = "<group>"; };
 		61FC95AF1DB8B24C00C3BD98 /* AnxietyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnxietyViewController.m; path = Controllers/AnxietyViewController.m; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 		61129FC81D95C18C00598211 = {
 			isa = PBXGroup;
 			children = (
+				61EED06F1DE44DF60086641B /* AlertDialog.h */,
+				61EED0701DE44DF60086641B /* AlertDialog.m */,
 				61C0B90F1DE3801C003F57BA /* Bold+Text.h */,
 				61C0B9101DE3801C003F57BA /* Bold+Text.m */,
 				61571C921DDBA8F800079CBA /* Authentication.h */,
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61EED0711DE44DF60086641B /* AlertDialog.m in Sources */,
 				61FC95B41DB8BFB800C3BD98 /* DepressionViewController.m in Sources */,
 				61FC95B01DB8B24C00C3BD98 /* AnxietyViewController.m in Sources */,
 				614F56A51D9DC46A00E81973 /* FrontViewController.m in Sources */,

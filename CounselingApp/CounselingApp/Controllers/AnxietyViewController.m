@@ -11,6 +11,7 @@
 #import "EditViewController.h"
 #import "AppDelegate.h"
 #import "Bold+Text.h"
+#import "Authentication.h"
 
 @interface AnxietyViewController (){
     NSMutableDictionary *_dict;
@@ -23,8 +24,10 @@
 @implementation AnxietyViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.editBtn setEnabled:NO];
-    [self.editBtn setTintColor:[UIColor clearColor]];
+    if (![Authentication checkLogin]){
+        [self.editBtn setEnabled:NO];
+        [self.editBtn setTintColor:[UIColor clearColor]];
+    }
     _delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     self.title = NSLocalizedString(@"Anxiety", nil);
@@ -57,6 +60,13 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+    if ([Authentication checkLogin]){
+        [self.editBtn setEnabled:YES];
+        [self.editBtn setTintColor:[UIColor whiteColor]];
+    }else{
+        [self.editBtn setEnabled:NO];
+        [self.editBtn setTintColor:[UIColor clearColor]];
+    }
     NSAttributedString *x = [Bold_Text boldString:[_dict objectForKey:@"Content"][0]];
     self.contentLabel.attributedText = x;
     CGRect newFrame = self.contentLabel.frame;

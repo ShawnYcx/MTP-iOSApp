@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import "FrontViewController.h"
 #import "LeftMenuController.h"
+#import "Authentication.h"
 
 @interface AppDelegate ()
 @end
@@ -32,7 +33,10 @@
         [fileManager copyItemAtPath:bundle toPath:path error:&error];
         NSLog(@"File exists now");
     }
-
+    
+    // Initializing admin id and pass for Demo
+    [Authentication signUp];
+    
     return YES;
 }
 

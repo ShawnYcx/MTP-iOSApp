@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UIView *signoutContainer;
+- (IBAction)signOut:(id)sender;
 
 @end

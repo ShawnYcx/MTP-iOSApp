@@ -10,7 +10,8 @@
 
 @interface Authentication : NSObject
 
--(BOOL)checkLogin;
--(BOOL)checkPasswordwithID:(NSString*)user pass:(NSString*)Password;
-
++(BOOL)checkLogin;
++(BOOL)checkPasswordwithID:(NSString*)user pass:(NSString*)Password;
++(void)updateToken:(NSString*)value;
++(void)signUp; // This is currently used to initialize admin id and pass for Demo
 @end
