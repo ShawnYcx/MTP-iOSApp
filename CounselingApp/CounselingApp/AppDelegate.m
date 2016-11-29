@@ -126,7 +126,7 @@
 }
 
 - (void)call {
-    NSString *phNo = @"+13252612549";
+    NSString *phNo = @"+13256742626";
     NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt://%@",phNo]];
     
     if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
