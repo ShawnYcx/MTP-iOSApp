@@ -1,37 +1,26 @@
-# MTP-iOSApp
+# MTP - ACU Counseling Application
 
 Project name: ACU Counseling Application
 Team: Big Hero 6
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local Mac Machine for development and testing.
 
 ### Prerequisities
 
-What things you need to install the software and how to install them
-
-```
-Cocoapods
-```
+`Xcode 8.1 and above`
 
 ### Installing
 
-After installing cocoapods on your system, apply `pod install` through `terminal / cmd` on the project folder
-
-```
-pod install
-```
-
-Run `CounselingApp.xcworkspace` and start working.
+1. Clone/download the project
+2. Go into the downloaded folder on your local machine
+3. Run `CounselingApp.xcodeproj` and start working.
 
 ## Built With
-
-* DropdownMenu
-* MSDynamicsDrawerViewController
+* SWRevealViewController
 
 ## Team members
-
 * Alexandra
 * Shawn Yap
 * Josh Spivey
